@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.140.1/containers/docker-from-docker
+{
+	"name": "Cargo Skyline",
+	"image": "rust:1.73",
+	"mounts": [],
+	// // Use this environment variable if you need to bind mount your local source code into a new container.
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"bungcip.better-toml",
+				"serayuzgur.crates",
+				"statiolake.vscode-rustfmt"
+			]
+		}
+	}
+}

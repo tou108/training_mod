@@ -1,0 +1,10 @@
+{
+    "rust-analyzer.check.overrideCommand": [
+        "cargo",
+        "+nightly",
+        "clippy",
+        "--workspace",
+        "--message-format=json",
+        "--all-features",
+    ],
+}
